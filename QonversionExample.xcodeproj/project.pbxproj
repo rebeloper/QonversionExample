@@ -3,23 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C9B328CA252861FA0062F18E /* QonversionExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B328C9252861FA0062F18E /* QonversionExampleApp.swift */; };
-		C9B328CC252861FA0062F18E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B328CB252861FA0062F18E /* ContentView.swift */; };
 		C9B328CE252861FB0062F18E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B328CD252861FB0062F18E /* Assets.xcassets */; };
 		C9B328D1252861FB0062F18E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B328D0252861FB0062F18E /* Preview Assets.xcassets */; };
+		C9B328DD252862120062F18E /* AppDelegateAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B328DA252862120062F18E /* AppDelegateAdaptor.swift */; };
+		C9B328DE252862120062F18E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B328DB252862120062F18E /* ContentView.swift */; };
+		C9B328DF252862120062F18E /* QonversionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B328DC252862120062F18E /* QonversionManager.swift */; };
+		C9B328E3252862A40062F18E /* Qonversion in Frameworks */ = {isa = PBXBuildFile; productRef = C9B328E2252862A40062F18E /* Qonversion */; };
+		C9B328E7252862D60062F18E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B328E6252862D60062F18E /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9B328C6252861FA0062F18E /* QonversionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QonversionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B328C9252861FA0062F18E /* QonversionExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QonversionExampleApp.swift; sourceTree = "<group>"; };
-		C9B328CB252861FA0062F18E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9B328CD252861FB0062F18E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B328D0252861FB0062F18E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C9B328D2252861FB0062F18E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B328DA252862120062F18E /* AppDelegateAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateAdaptor.swift; sourceTree = "<group>"; };
+		C9B328DB252862120062F18E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9B328DC252862120062F18E /* QonversionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QonversionManager.swift; sourceTree = "<group>"; };
+		C9B328E6252862D60062F18E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B328E3252862A40062F18E /* Qonversion in Frameworks */,
+				C9B328E7252862D60062F18E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,7 @@
 			children = (
 				C9B328C8252861FA0062F18E /* QonversionExample */,
 				C9B328C7252861FA0062F18E /* Products */,
+				C9B328E5252862D60062F18E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				C9B328C9252861FA0062F18E /* QonversionExampleApp.swift */,
-				C9B328CB252861FA0062F18E /* ContentView.swift */,
+				C9B328DC252862120062F18E /* QonversionManager.swift */,
+				C9B328DA252862120062F18E /* AppDelegateAdaptor.swift */,
+				C9B328DB252862120062F18E /* ContentView.swift */,
 				C9B328CD252861FB0062F18E /* Assets.xcassets */,
 				C9B328D2252861FB0062F18E /* Info.plist */,
 				C9B328CF252861FB0062F18E /* Preview Content */,
@@ -67,6 +79,14 @@
 				C9B328D0252861FB0062F18E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9B328E5252862D60062F18E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B328E6252862D60062F18E /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +105,9 @@
 			dependencies = (
 			);
 			name = QonversionExample;
+			packageProductDependencies = (
+				C9B328E2252862A40062F18E /* Qonversion */,
+			);
 			productName = QonversionExample;
 			productReference = C9B328C6252861FA0062F18E /* QonversionExample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +135,9 @@
 				Base,
 			);
 			mainGroup = C9B328BD252861FA0062F18E;
+			packageReferences = (
+				C9B328E1252862A40062F18E /* XCRemoteSwiftPackageReference "qonversion-ios-sdk" */,
+			);
 			productRefGroup = C9B328C7252861FA0062F18E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B328CC252861FA0062F18E /* ContentView.swift in Sources */,
+				C9B328DD252862120062F18E /* AppDelegateAdaptor.swift in Sources */,
+				C9B328DF252862120062F18E /* QonversionManager.swift in Sources */,
 				C9B328CA252861FA0062F18E /* QonversionExampleApp.swift in Sources */,
+				C9B328DE252862120062F18E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9B328E1252862A40062F18E /* XCRemoteSwiftPackageReference "qonversion-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qonversion/qonversion-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9B328E2252862A40062F18E /* Qonversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9B328E1252862A40062F18E /* XCRemoteSwiftPackageReference "qonversion-ios-sdk" */;
+			productName = Qonversion;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9B328BE252861FA0062F18E /* Project object */;
 }
